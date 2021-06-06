@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  div{
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      background-color: #fdf8f2;
+  }
+  
+  button{
+    border-color: #996348 !important;
+    width: 250px;
+    color:#664331;
+  }
+  

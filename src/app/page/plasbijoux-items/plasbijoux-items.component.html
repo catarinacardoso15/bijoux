@@ -1,0 +1,12 @@
+<div class="card" *ngFor="let item of productsItems">
+  <img src="{{ getRandomImg(item.img) }}" />
+  <div class="content">
+    <div class="info">
+      <span>{{ item.name }} {{ item.code }}</span>
+      <span>{{ getDecimal(item.price) }} €</span>
+    </div>
+    <div class="more-info">
+      <div *ngFor="let cor of item.cores" class="{{ cor }}"></div>
+    </div>
+  </div>
+</div>

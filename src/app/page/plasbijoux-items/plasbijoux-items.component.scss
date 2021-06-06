@@ -1,0 +1,55 @@
+:host {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 50px 50px;
+  background-color: #fdf8f2;
+}
+
+.card {
+  margin: 40px !important;
+  background-color: white;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px 0 #00000024, 0 1px 3px 0 #0000001f;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  img {
+    flex: 3;
+  }
+  .content {
+    height: 60px;
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    .info {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .more-info {
+      display: none;
+    }
+    color: #664331;
+    span {
+      text-align: right;
+    }
+  }
+  &:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+
+    .more-info {
+      display: flex !important;
+      div{
+          margin: 2px;
+      }
+    }
+  }
+}
+
+.color-1 {
+  background-image: url("../../../assets/1.jpg");
+  width: 17px;
+  height: 17px;
+}
